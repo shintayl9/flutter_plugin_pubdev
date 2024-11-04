@@ -1,7 +1,22 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:manajemen_plugin/red_text_widget.dart';
+import 'widget/takepicture_screen.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final cameras = await availableCameras();
+  final firstCamera = cameras.first;
+
+  runApp(MaterialApp(
+    theme: ThemeData.dark(),
+    home: TakepictureScreen(
+      camera: firstCamera,
+    ),
+  ));
+
+
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -111,6 +126,20 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            Container(
+              color: Colors.yellowAccent,
+              width: 50,
+              child: const RedTextWidget(
+                text: 'You have pushed the button this many times:',
+              ),
+            ),
+            Container(
+              color: Colors.greenAccent,
+              width: 100,
+              child: const Text(
+                'You have pushed the button this many times:',
+              ),
             ),
           ],
         ),
