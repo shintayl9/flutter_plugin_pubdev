@@ -5,7 +5,7 @@
 Jika error tambahkan import auto_size_text nya dan tambahkan field formal parameternya (required)
 ![Screenshot manajemen_plugin](images/image.png)
 
-menambahkan variabel text dan parameter di constructor
+Menambahkan variabel text dan parameter di constructor
 ![Screenshot manajemen_plugin](images/image-2.png)
 
 hasil
