@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class TakepictureScreen extends StatefulWidget {
   const TakepictureScreen({
-    Key? key,
+    super.key,
     required this.camera,
-  }) : super(key: key);
+  });
 
   final CameraDescription camera;
 
@@ -36,7 +36,7 @@ class TakepictureScreenState extends State<TakepictureScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Take a picture - 362358302076')),
+      appBar: AppBar(title: const Text('Take a Picture - ishak_362358302072')),
       body: FutureBuilder(
         future: _initializeControllerFuture,
         builder: (context, snapshot) {
@@ -52,6 +52,7 @@ class TakepictureScreenState extends State<TakepictureScreen> {
           try {
             await _initializeControllerFuture;
             final image = await _controller.takePicture();
+            // Lakukan sesuatu dengan path gambar, misalnya:
             // Navigator.pop(context, image.path);
           } catch (e) {
             print(e);

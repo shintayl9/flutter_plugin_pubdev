@@ -13,3 +13,5 @@ hasil
 
 Camera
 ![Screenshot manajemen_plugin](images/image-4.png)
+
+![alt text](image.png)
