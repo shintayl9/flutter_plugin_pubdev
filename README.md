@@ -2,7 +2,7 @@
 
 ![Screenshot manajemen_plugin](images/image-1.png)
 
-Error? tambahkan import auto_size_text nya dan tambahkan field formal parameternya (required)
+Jika error tambahkan import auto_size_text nya dan tambahkan field formal parameternya (required)
 ![Screenshot manajemen_plugin](images/image.png)
 
 menambahkan variabel text dan parameter di constructor
@@ -14,4 +14,8 @@ hasil
 Camera
 ![Screenshot manajemen_plugin](images/image-4.png)
 
-![alt text](image.png)
+Hasil filter
+![Screenshot manajemen_plugin](images/image-5.png)
+
+Maksud void async adalah berfungsi sebagai mekanisme untuk mendefinisikan operasi asynchronous yang tidak menghasilkan hasil.
+
